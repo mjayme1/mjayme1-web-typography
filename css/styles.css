@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: 'dragonfont';
+    src: url('../fonts/PetesDragon-K7VDA.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #dadada;
+    background-color: rgb(36, 36, 36);
+}
+
+/* 2.4, 4.8, 7.2, 9.6, 12.0, 14.4, 16.8, 19.2, 21.6 */
+
+.container {
+    max-width: 96rem;
+    margin: 0 auto;
+    background: url('../img/background.jpg') top center / cover 
+    no-repeat #000;
+    padding: 7.2rem; 
+}
+
+section.main section > div {
+    padding: 0 1.8rem;
+}
+
+h1 {
+    font-family: 'dragonfont';
+    font-size: 14.4rem;
+    line-height: 7.2rem;
+    margin-bottom: 14.4rem;
+    padding-top: 72rem;
+    text-align: center;
+    text-shadow: 0 0.6rem 0.1rem #202941, 0 0.1rem 0.2rem #052047;
+}
+
+h2 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 4.883rem;
+    line-height: 7.2rem;
+    padding: 21.6rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Playfair Display SC", serif;
+    font-size: 3.125rem;
+    line-height: 4.8rem;
+}
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    color: rgb(198, 198, 198);
+    margin-bottom: 2.4rem;
+}
+
+.plot {
+    column-count: 2;
+	column-gap: 5rem;
+	column-rule: 0.2rem solid rgba(69, 119, 181, 0.2);
+	column-width: 20rem;
+}
+
+.plot h2,
+.plot p:first-of-type,
+.plot p:nth-of-type(2) {
+	column-span: all;
+}
+
+.plot p:nth-of-type(3)::first-letter {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    margin-top: -1px;
+    display: block;
+    float: left;
+    padding-right: 0.5rem;
+}
+
+.plot img {
+    margin: 1.6rem 0px 3.2rem;
+    border-radius: 1rem;
+}
+
+.characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.characters h2 {
+    width: 100%;
+}
+
+.characters h3 {
+    border-left: 0.5rem solid #062955;
+    border-radius: 0.4rem;
+    padding: 0 0 0 1rem;
+    margin-bottom: 2.4rem;
+    background: #07203299;
+}
+
+.characters > section {
+    width: calc(100% / 2 - 2.75rem);
+}
+
+.characters  section:nth-child(1) {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.film .flex img {
+    width: 48%;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.film .flex div {
+    width: 48%;
+}
+
+.game .flex img {
+    width: 37%;
+    border-radius: 1rem;
+    margin: 1.6rem 0 3.2rem;
+}
+
+.game .flex div {
+    width: 58%;
+    margin-top: 2.4rem;
+}
+
+
+.source {
+    margin: 12rem -7.2rem -7.2rem;
+    padding: 2.4rem 7.2rem 4.8rem;
+    background: #07203299;
+    position: relative;
+    text-align: center;
+}
+
+.source h3 {
+    margin-bottom: 2.4rem;
+}
+
+.source p {
+    margin-bottom: 0;
+}
+
+.source a {
+    text-decoration: none;
+    color: rgb(198, 198, 198);
+}
+
+.source img {
+    position: absolute;
+    right: 0;
+    bottom: 10rem;
+}
